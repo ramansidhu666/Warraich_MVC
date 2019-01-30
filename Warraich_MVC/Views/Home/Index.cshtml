@@ -1,0 +1,733 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = null;
+}
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Warraich Meats</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="../css/animate.min.css">
+
+    <!-- Font-awesome CSS-->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+    <!-- Flaticon CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/font2/flaticon.css">
+
+
+    <!-- Owl Caousel CSS -->
+    <link rel="stylesheet" href="../vendor/OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../vendor/OwlCarousel/owl.theme.default.min.css">
+
+    <!-- Main Menu CSS -->
+    <link rel="stylesheet" href="../css/meanmenu.min.css">
+
+    <!-- nivo slider CSS -->
+    <link rel="stylesheet" href="../vendor/slider/css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="../vendor/slider/css/preview.css" type="text/css" media="screen" />
+
+    <!-- Switch Style CSS -->
+    <link rel="stylesheet" href="../css/switch-style.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Modernizr Js -->
+    <script src="../js/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+</head>
+<body>
+    <!--[if lt IE 8]>
+
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <div class="wrapper">
+        <!-- Slider 1 Area Start Here -->
+        <!-- Header Area Start Here -->
+        <header>
+            <div class="header3-area">
+                <div class="header-top-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="header-top-left">
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="Tel:+1 905 450 1792"> + 905 450 1792 </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="middle-logo">
+                                    <a href="../Home/index"><img class="img-responsive" src="../img/logo-white.png" alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="header-top-right">
+                                    <ul>
+                                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="Tel:+1 905 450 1792"> info@warraichmeatscharolais.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom-area" id="sticker">
+                    <div class="container">
+                        <div class="main-menu-area">
+                            <nav class="navigation">
+                                <ul>
+                                    <li><a class="index" href="../Home/index">Home</a></li>
+                                    <li><a class="about" href="../Home/about">About</a></li>
+                                    <li>
+                                        <a class="service raw_food marinated_food sea_food tray family_package onsite_catering" href="#">Our Services</a>
+                                        <ul>
+                                            <li><a href="../Home/raw_food">Raw Food</a></li>
+                                            <li><a href="../Home/marinated_food">Marinated Food</a></li>
+                                            <li><a href="../Home/sea_food">Sea Food</a></li>
+                                            <li><a href="../Home/tray">Tray Services</a></li>
+                                            <li><a href="../Home/family_package">Family Package</a></li>
+                                            <li><a href="../Home/onsite_catering"> Onsite Catering</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="cooked ready_to_serve special_menu special_menu buffet catering_menu appetizer_menu" href="#">Cooked Food</a>
+                                        <ul>
+                                            <li><a href="../Home/ready_to_serve">Ready to Serve Menu</a></li>
+                                            <li><a href="../Home/special_menu">Special Menu</a></li>
+                                            <li><a href="../Home/buffet">Buffet Menu</a></li>
+                                            <li><a href="../Home/catering_menu">Catering</a></li>
+                                            <li><a href="../Home/appetizer_menu">Appetizer</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Place your Order</a></li>
+                                    <li><a class="reservation" href="../Home/reservation">Reservation</a></li>
+                                    <li><a class="Contact" href="../Home/Contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu Area Start -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown">
+                                    <ul>
+                                        <li><a class="index" href="../Home/index">Home</a></li>
+                                        <li><a class="about" href="../Home/about">About</a></li>
+                                        <li>
+                                            <a class="service raw_food marinated_food sea_food tray family_package onsite_catering" href="#">Our Services</a>
+                                            <ul>
+                                                <li><a href="../Home/raw_food">Raw Food</a></li>
+                                                <li><a href="../Home/marinated_food">Marinated Food</a></li>
+                                                <li><a href="../Home/sea_food">Sea Food</a></li>
+                                                <li><a href="../Home/tray">Tray Services</a></li>
+                                                <li><a href="../Home/family_package">Family Package</a></li>
+                                                <li><a href="../Home/onsite_catering"> Onsite Catering</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="cooked ready_to_serve special_menu special_menu buffet catering_menu appetizer_menu" href="#">Cooked Food</a>
+                                            <ul>
+                                                <li><a href="../Home/ready_to_serve">Ready to Serve Menu</a></li>
+                                                <li><a href="../Home/special_menu">Special Menu</a></li>
+                                                <li><a href="../Home/buffet">Buffet Menu</a></li>
+                                                <li><a href="../Home/catering_menu">Catering</a></li>
+                                                <li><a href="../Home/appetizer_menu">Appetizer</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Place your Order</a></li>
+                                        <li><a class="reservation" href="../Home/reservation">Reservation</a></li>
+                                        <li><a class="Contact" href="../Home/Contact">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu Area End -->
+        </header>
+        <!-- Header Area End Here -->
+        <div class="slider1-area">
+            <div class="bend niceties preview-1">
+                <div id="ensign-nivoslider-3" class="slides">
+                    <img src="../img/slider/slide3-1.jpg" alt="slider" title="#slider-direction-1" />
+                    <img src="../img/slider/slide3-2.jpg" alt="slider" title="#slider-direction-2" />
+                    <img src="../img/slider/slide1-3.jpg" alt="slider" title="#slider-direction-3" />
+                </div>
+                <div id="slider-direction-1" class="t-cn slider-direction">
+                    <div class="slider-content s-tb slide-1">
+                        <div class="title-container s-tb-c">
+                            <h1 class="title1">Welcome To <span>WARRAICH MEAT</span> SHOP</h1>
+                            <p>Warraich Meats is committed to providing <br>tasty and healthy ready to eat and ready to cook meat products.</p>
+                            <div class="slider-btn-area">
+                                <a href="#" class="ghost-btn">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="slider-direction-2" class="t-cn slider-direction">
+                    <div class="slider-content s-tb slide-2">
+                        <div class="title-container s-tb-c">
+                            <h1 class="title1">Finest Quality Raw Meats</h1>
+                            <p>Warraich Meats is committed to providing <br>tasty and healthy ready to eat and ready to cook meat products.</p>
+                            <div class="slider-btn-area">
+                                <a href="#" class="ghost-btn">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="slider-direction-3" class="t-cn slider-direction">
+                    <div class="slider-content s-tb slide-3">
+                        <div class="title-container s-tb-c">
+                            <h1 class="title1"><span>Warraich</span> Cater to your Next party</h1>
+                            <p>Warraich Meats is committed to providing <br>tasty and healthy ready to eat and ready to cook meat products.</p>
+                            <div class="slider-btn-area">
+                                <a href="#" class="ghost-btn">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider 1 Area End Here -->
+        <!-- About 2 Area Start Here -->
+        <div class="recipe-of-the-day2-area">
+            <img src="../img/recipe-of-the-day2-banner.png" class="img-responsive section-back" alt="recipe-of-the-day2-banner">
+            <div class="container">
+                <h2 class="title-color">Our Services</h2>
+                <span class="subtitle-color">Warraich Meat Shop</span>
+                <div class="row">
+                    <div class="">
+
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="recipe-box2">
+                                <ul class="recipe-box2-social">
+                                    <li><a href="../Home/raw_food"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                </ul>
+                                <div class="recipe-box2-img-holder">
+                                    <a href="../Home/raw_food"><img src="../img/raw_food.jpg" alt="Recipe" class="img-responsive"></a>
+                                </div>
+                                <div class="recipe-box2-bottom-content-holder">
+                                    <h3><a href="../Home/raw_food">Raw Food</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="recipe-box2">
+                                <ul class="recipe-box2-social">
+                                    <li><a href="../Home/marinated_food"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                </ul>
+                                <div class="recipe-box2-img-holder">
+                                    <a href="../Home/marinated_food"><img src="../img/marinated_food.jpg" alt="Recipe" class="img-responsive"></a>
+                                </div>
+                                <div class="recipe-box2-bottom-content-holder">
+                                    <h3><a href="../Home/marinated_food">Marinated Food</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="recipe-box2">
+                                <ul class="recipe-box2-social">
+                                    <li><a href="../Home/sea_food"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                </ul>
+                                <div class="recipe-box2-img-holder">
+                                    <a href="../Home/sea_food"><img src="../img/sea_food.jpg" alt="Recipe" class="img-responsive"></a>
+                                </div>
+                                <div class="recipe-box2-bottom-content-holder">
+                                    <h3><a href="../Home/sea_food">Sea Food</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="recipe-box2">
+                                <ul class="recipe-box2-social">
+                                    <li><a href="../Home/tray"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                </ul>
+                                <div class="recipe-box2-img-holder">
+                                    <a href="../Home/tray"><img src="../img/family.jpg" alt="Recipe" class="img-responsive"></a>
+                                </div>
+                                <div class="recipe-box2-bottom-content-holder">
+                                    <h3><a href="../Home/tray">Tray Size</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="recipe-box2">
+                                <ul class="recipe-box2-social">
+                                    <li><a href="../Home/family_package"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                </ul>
+                                <div class="recipe-box2-img-holder">
+                                    <a href="../Home/tray"><img src="../img/family2.jpg" alt="Recipe" class="img-responsive"></a>
+                                </div>
+                                <div class="recipe-box2-bottom-content-holder">
+                                    <h3><a href="../Home/family_package">Family Package</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="recipe-box2">
+                                <ul class="recipe-box2-social">
+                                    <li><a href="../Home/onsite_catering" "><i class=" fa fa-link" aria-hidden="true"></i></a></li>
+                                </ul>
+                                <div class="recipe-box2-img-holder">
+                                    <a href="../Home/onsite_catering"><img src="../img/catering.jpg" alt="Recipe" class="img-responsive"></a>
+                                </div>
+                                <div class="recipe-box2-bottom-content-holder">
+                                    <h3><a href="../Home/onsite_catering">Onsite Catering</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="our-recipes-area section-space">
+            <div class="container">
+                <h2 class="title-color">Cooked Food</h2>
+                <span class="subtitle-color">Warraich Meat Shop</span>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="recipe-box2">
+                            <ul class="recipe-box2-social">
+                                <li><a href="../Home/ready_to_serve"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <div class="recipe-box2-img-holder">
+                                <a href="../Home/ready_to_serve"><img src="../img/recipe-box2-7.jpg" alt="Recipe" class="img-responsive"></a>
+                            </div>
+                            <div class="recipe-box2-bottom-content-holder">
+                                <h3><a href="../Home/ready_to_serve">Ready to Serve Menu</a></h3>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="recipe-box2">
+                            <ul class="recipe-box2-social">
+                                <li><a href="../Home/special_menu"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <div class="recipe-box2-img-holder">
+                                <a href="../Home/special_menu"><img src="../img/recipe-box2-8.jpg" alt="Recipe" class="img-responsive"></a>
+                            </div>
+                            <div class="recipe-box2-bottom-content-holder">
+                                <h3><a href="../Home/special_menu">Special Menu</a></h3>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="recipe-box2">
+                            <ul class="recipe-box2-social">
+                                <li><a href="../Home/buffet"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <div class="recipe-box2-img-holder">
+                                <a href="../Home/buffet"><img src="../img/recipe-box2-9.jpg" alt="Recipe" class="img-responsive"></a>
+                            </div>
+                            <div class="recipe-box2-bottom-content-holder">
+                                <h3><a href="../Home/buffet">Buffet Menu</a></h3>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="recipe-box2">
+                            <ul class="recipe-box2-social">
+                                <li><a href="../Home/appetizer_menu"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <div class="recipe-box2-img-holder">
+                                <a href="#"><img src="../img/recipe-box2-10.jpg" alt="Recipe" class="img-responsive"></a>
+                            </div>
+                            <div class="recipe-box2-bottom-content-holder">
+                                <h3><a href="../Home/appetizer_menu">Appetizer Menu</a></h3>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About 2 Area End Here -->
+        <!-- Tasty Menu Area Start Here -->
+        <div class="tasty-menu-area">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title">Tasty Menu Today</h2>
+                    <span class="subtitle">Chef Selection</span>
+                    <div class="tasty-menu-inner">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <h3 class="inner-sub-title-center title-bar-full-width">Raw Food Menu</h3>
+                            <ul>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4><a href="#">Desi Whole Chicken</a></h4>
+                                            <span>$16.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4><a href="#">White Whole Chicken</a></h4>
+                                            <span>$3.99</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4><a href="#">Chicken Legs with Skin</a></h4>
+                                            <span>$2.99</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4><a href="#">Chicken Legs Clean Cut</a></h4>
+                                            <span>$3.49</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4><a href="#">Chicken D_Sticks With Skin</a></h4>
+                                            <span>$3.49</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4><a href="#">Chicken Drumsticks Clean</a></h4>
+                                            <span>$3.99</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="../Home/raw_food" class="ghost-on-hover-btn">Click Here for Full Menu</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <h3 class="inner-sub-title-center title-bar-full-width">Marinated Food Menu</h3>
+                            <ul>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4><a href="#">Tandoori Chicken</a></h4>
+                                            <span>$4.49</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4><a href="#">Tandoori Chicken(BBQ) Chicken/Spicy</a></h4>
+                                            <span>$4.49</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4><a href="#">Lemon Chicken</a></h4>
+                                            <span>$4.49</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4><a href="#">Mint Chicken</a></h4>
+                                            <span>$4.49</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4><a href="#">Afghani Chicken</a></h4>
+                                            <span>$4.49</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4><a href="#">Marinated Drumsticks</a></h4>
+                                            <span>$4.69</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="../Home/marinated_food" class="ghost-on-hover-btn">Click Here for Full Menu</a>
+
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tasty Menu Area End Here -->
+        <!-- About Area Start Here -->
+        <div class="about-page-area">
+            <img src="../img/about1-bottom-back.png" class="img-responsive" alt="about1-bottom-back">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="about-page-left">
+                            <h2>About us</h2>
+                            <p><span><span>Started in 2002</span> We sell top quality fresh meat. Warraich Meats has been in operations since 2002 and has successfully been operating its stores over these years. Our success is built upon an unflinching commitment to quality and customer service..</span></p>
+                            <p>Warraich Meats takes pride in the fact that it is probably the first ethnic food outlet that has introduced fine Indian recipes, passed on from generation to generation by our grandmothers over many centuries, into the market for our customers who value fine non vegetarian cuisine with home made flavors and taste.We believe in providing our customers with fresh meat products with a wide ranging choice of marinated and spiced meats, chicken and fish products, carefully prepared to ensure the preservation of natural texture, taste, nutrients and juiciness, which comes through when cooked. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="about-page-right">
+                            <div class="rc-carousel"
+                                 data-loop="true"
+                                 data-items="1"
+                                 data-margin="15"
+                                 data-autoplay="true"
+                                 data-autoplay-timeout="10000"
+                                 data-smart-speed="2000"
+                                 data-dots="true"
+                                 data-nav="false"
+                                 data-nav-speed="false"
+                                 data-r-x-small="1"
+                                 data-r-x-small-nav="false"
+                                 data-r-x-small-dots="true"
+                                 data-r-x-medium="1"
+                                 data-r-x-medium-nav="false"
+                                 data-r-x-medium-dots="true"
+                                 data-r-small="1"
+                                 data-r-small-nav="false"
+                                 data-r-small-dots="true"
+                                 data-r-medium="1"
+                                 data-r-medium-nav="false"
+                                 data-r-medium-dots="true">
+                                <div class="about-page-img-holder">
+                                    <img src="../img/about1-banner1.jpg" class="img-responsive" alt="about1-banner">
+                                </div>
+                                <div class="about-page-img-holder">
+                                    <img src="../img/about1-banner_2.jpg" class="img-responsive" alt="about1-banner">
+                                </div>
+                                <div class="about-page-img-holder">
+                                    <img src="../img/about1-banner-1.jpg" class="img-responsive" alt="about1-banner">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="row">
+                    <div class="about-page-bottom">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="about-page-bottom-box border-right wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                                <div class="media">
+                                    <a href="#" class="pull-left">
+                                       <i class="fa fa-star" aria-hidden="true"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h3><a href="#">We provide Fresh Quality</a></h3>
+                                        <p>Corem ipsum dolor sit amet, consectetur adipiscing elit. In sed nisl elementumty yer scelerisque posuere neque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="about-page-bottom-box border-right wow zoomIn" data-wow-duration="2s" data-wow-delay="1s">
+                                <div class="media">
+                                    <a href="#" class="pull-left">
+                                      <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                     </a>
+                                    <div class="media-body">
+                                        <h3><a href="#">Onsite Catering</a></h3>
+                                        <p>Corem ipsum dolor sit amet, consectetur adipiscing elit. In sed nisl elementumty yer scelerisque posuere neque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="about-page-bottom-box wow zoomIn" data-wow-duration="2s" data-wow-delay="1.5s">
+                                <div class="media">
+                                    <a href="#" class="pull-left">
+                                       <i class="fa fa-gift" aria-hidden="true"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h3><a href="#">Provide Chefdish Buffet</a></h3>
+                                        <p>Corem ipsum dolor sit amet, consectetur adipiscing elit. In sed nisl elementumty yer scelerisque posuere neque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <!-- About Area End Here -->
+        <!-- Footer Area Start Here -->
+        <footer>
+            <div class="footer-area-top section-space">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="footer-box">
+                                <h3 class="title-bar-footer">About Warraich Meats</h3>
+                                <div class="footer-about">
+                                    <p>
+                                        Warraich Meats is committed to providing tasty and healthy ready to eat and ready to cook meat products. Our motto is hygiene and quality and we go every length to maintain our standards that we set out years ago when we started with one shop in north Brampton.
+                                    </p>
+                                </div>
+                                <ul class="footer-social">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="footer-box">
+                                <h3 class="title-bar-footer">Our Services</h3>
+                                <ul class="opening-schedule">
+                                    <li><a href="cooked_food.html">Cooked Food</a></li>
+                                    <li><a href="raw_food.html">Raw Food</a></li>
+                                    <li><a href="marinated_food.html">Marinated Food</a></li>
+                                    <li><a href="sea_food.html">Sea Food</a></li>
+                                    <li><a href="tray.html">Tray Services</a></li>
+                                    <li><a href="family_package.html">Family Package</a></li>
+                                    <li><a href="onsite_catering.html">Onsite Catering</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="footer-box">
+                                <h3 class="title-bar-footer">Opening Hours</h3>
+                                <ul class="opening-schedule">
+                                    <li>Monday<span> 10am - 12am (Midnight)</span></li>
+                                    <li>Tuesday<span> 10am - 12am (Midnight)</span></li>
+                                    <li>Wednesday<span>10am - 12am (Midningt)</span></li>
+                                    <li>Thursday<span> 10am - 12am (Midningt)</span></li>
+                                    <li>Friday<span>10am - 2am (Midningt)</span></li>
+                                    <li>Saturday<span>10am - 2am (Midningt)</span></li>
+                                    <li>Sunday<span> 10am - 12am (Midningt)</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-area-bottom">
+                <div class="container">
+                    <p>&copy; 2018 Warraich Meats All Rights Reserved. &nbsp; Designed by<a target="_blank" href="#"> only4agents</a>.com</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End Here -->
+    </div>
+    <!-- jquery-->
+    <!-- jquery-->
+    <script src="../js/jquery-2.2.4.min.js" type="text/javascript"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <!-- Plugins js -->
+    <script src="../js/plugins.js" type="text/javascript"></script>
+
+    <!-- Bootstrap js -->
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- WOW JS -->
+    <script src="../js/wow.min.js"></script>
+
+    <!-- Nivo slider js -->
+    <script src="../vendor/slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="../vendor/slider/home.js" type="text/javascript"></script>
+
+    <!-- Owl Cauosel JS -->
+    <script src="../vendor/OwlCarousel/owl.carousel.min.js" type="text/javascript"></script>
+
+    <!-- Meanmenu Js -->
+    <script src="../js/jquery.meanmenu.min.js" type="text/javascript"></script>
+
+    <!-- Srollup js -->
+    <script src="../js/jquery.scrollUp.min.js" type="text/javascript"></script>
+
+    <!-- jquery.counterup js -->
+    <script src="../js/jquery.counterup.min.js"></script>
+    <script src="../js/waypoints.min.js"></script>
+
+    <!-- Switch js -->
+    <script src="../js/switch-style.js" type="text/javascript"></script>
+
+    <!-- Validator js -->
+    <script src="../js/validator.min.js" type="text/javascript"></script>
+
+    <!-- Custom Js -->
+    <script src="../js/main.js" type="text/javascript"></script>
+    <script>
+
+        $(function () {
+            $("#form-date").datepicker();
+            $('#form-time').timepicker();
+        });
+    </script>
+    <script>
+        $(function () {
+            debugger;
+            var activeurl = window.location.pathname;
+            var myString = activeurl.substr(activeurl.indexOf("/") + 6)
+            if (myString != "") {
+                var latest = $('a[class="' + myString + '"]');
+                var prev = $('.navigation li').removeClass('active');
+                latest.parent('li').addClass('active');
+                if ($(".service").hasClass(myString)) {
+                    $(".service").parent('li').addClass('active');
+                }
+                if ($(".cooked").hasClass(myString)) {
+                    $(".cooked").parent('li').addClass('active');
+                }
+            }
+            else {
+                $('a[class="Index"]').parent('li').addClass('active');
+            }
+
+        });
+    </script>
+
+</body>
+</html>

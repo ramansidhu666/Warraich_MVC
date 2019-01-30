@@ -1,0 +1,153 @@
+﻿@{
+    ViewBag.Title = "reservation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- reservation-page-area Start Here -->
+<div class="reservation-page-area">
+    <div class="container">
+        <div class="reservation-page-inner">
+            <div class="reservation-page-left">
+                <div class="reservation-page-form">
+                    <span>Take A</span>
+                    <h2>RESERVATION</h2>
+                    <form id="reservation-form">
+                        <div class="reservation-page-input-box">
+                            <input type="text" name="username" id="first_name" class="form-control" placeholder="Name" tabindex="1">
+                            <label id="message1" class="error"></label>
+
+                        </div>
+                        <div class="reservation-page-input-box">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="E-mail" tabindex="2">
+                            <label id="message2" class="error"></label>
+                        </div>
+                        <div class="reservation-page-input-box">
+                            <input type="text" name="Phone" id="Phone" class="form-control" placeholder="Phone" tabindex="2">
+                            <label id="message3" class="error"></label>
+                        </div>
+                        <div class="reservation-page-input-box">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <input type="text" class="form-control rt-date" placeholder="Date" name="date" id="form-date" />
+                            <label id="message5" class="error"></label>
+
+                        </div>
+                        <div class="reservation-page-input-box">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <input type="text" class="form-control rt-time" placeholder="Time" name="time" id="form-time" data-error="Subject field is required" required />
+                            <label id="message6" class="error"></label>
+                        </div>
+              
+                <div class="reservation-page-input-box">
+                    <textarea name="message" class="form-control" id="exampleTextarea" placeholder="Message:" rows="3"></textarea>
+                    <label id="message4" class="error"></label>
+                </div>
+                <button id="btnSave" type="button" class="book-now-btn">Book A Table</button>
+                <div class='form-response'></div>
+                </form>
+            </div>
+        </div>
+        <div class="reservation-page-right">
+            <img src="../img/reservation-banner.png" class="img-responsive" alt="reservation-banner">
+        </div>
+    </div>
+</div>
+</div>
+<!-- Table Reservation 2 Area End Here -->
+
+<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+<script>
+
+    $(document).ready(function () {
+
+
+        $('#btnSave').click(function () {
+            debugger;
+
+            if ($("input[name=username]").val() == "") {
+                $('#message1').html('This field is required');
+                $('#message2').html('');
+                $('#message3').html('');
+                $('#message4').html('');
+                $('#message5').html('');
+                $('#message6').html('');
+            }
+            else if ($("input[name=email]").val() == "") {
+                $('#message2').html('This field is required');
+                $('#message1').html('');
+                $('#message3').html('');
+                $('#message4').html('');
+                $('#message5').html('');
+                $('#message6').html('');
+
+            }
+            else if ($("input[name=Phone]").val() == "") {
+                $('#message3').html('This field is required');
+                $('#message1').html('');
+                $('#message2').html('');
+                $('#message4').html('');
+                $('#message5').html('');
+                $('#message6').html('');
+
+            }
+            else if ($("input[name=date]").val() == "") {
+                $('#message5').html('This field is required');
+                $('#message1').html('');
+                $('#message2').html('');
+                $('#message4').html('');
+                $('#message3').html('');
+                $('#message6').html('');
+
+            }
+            else if ($("input[name=time]").val() == "") {
+                $('#message6').html('This field is required');
+                $('#message1').html('');
+                $('#message3').html('');
+                $('#message2').html('');
+                $('#message5').html('');
+                $('#message4').html('');
+            }
+           
+            else if ($("textarea[name=message]").val() == "") {
+                $('#message4').html('This field is required');
+                $('#message1').html('');
+                $('#message3').html('');
+                $('#message2').html('');
+                $('#message5').html('');
+                $('#message6').html('');
+            }
+
+            if ($("input[name=username]").val() != "" && $("input[name=email]").val() != "" && $("input[name=Phone]").val() != "" && $("textarea[name=message]").val() != "" && $("input[name=date]").val() != "" && $("input[name=timr]").val() != "") {
+
+                $.ajax({
+
+                    url: "/Home/Reservation",
+                    data: { 'username': $("input[name=username]").val(), 'Phone': $("input[name=Phone]").val(), 'Email': $("input[name=email]").val(), 'message': $("textarea[name=message]").val(), 'Date': $("input[name=date]").val(), 'Time': $("input[name=time]").val() },
+                    type: "POST",
+                    dataType: 'json',
+                    success: function (data) {
+                        debugger;
+                        alert('Mail has been sent to admin. You will be contacted shortly.');
+                        $('#message1').html('');
+                        $('#message3').html('');
+                        $('#message2').html('');
+                        $('#message4').html('');
+                        $('#message5').html('');
+                        $('#message6').html('');
+                        $("input[name=username]").val('');
+                        $("input[name=email]").val('');
+                        $("input[name=Phone]").val('');
+                        $("textarea[name=message]").val('');
+                        return false;
+                    },
+                    error: function () {
+
+                        alert("Dynamic content load failed.");
+                    }
+                });
+            }
+        });
+    });
+</script>
+

@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{841C228F-862F-4C9C-83C9-CE32099448B4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Warraich_MVC</RootNamespace>
+    <AssemblyName>Warraich_MVC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\flaticon.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\font2\flaticon.css" />
+    <Content Include="css\font\flaticon.css" />
+    <Content Include="css\jquery.datetimepicker.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\meanmenu.min.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\select2.min.css" />
+    <Content Include="css\switch-style.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\flaticon.css" />
+    <Content Include="fonts\flaticon.html" />
+    <Content Include="fonts\flaticon.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="img\about1-banner-1.jpg" />
+    <Content Include="img\about1-banner1.jpg" />
+    <Content Include="img\about1-banner_2.jpg" />
+    <Content Include="img\about1-bottom-back.png" />
+    <Content Include="img\about2-back.jpg" />
+    <Content Include="img\about2-top-back.png" />
+    <Content Include="img\award1-back.jpg" />
+    <Content Include="img\blog\1.jpg" />
+    <Content Include="img\blog\2.jpg" />
+    <Content Include="img\blog\3.jpg" />
+    <Content Include="img\blog\4.jpg" />
+    <Content Include="img\blog\5.jpg" />
+    <Content Include="img\border.png" />
+    <Content Include="img\catering.jpg" />
+    <Content Include="img\chef\1.png" />
+    <Content Include="img\chef\single-chef.jpg" />
+    <Content Include="img\client\1.png" />
+    <Content Include="img\client\left-back.jpg" />
+    <Content Include="img\client\left-back2.jpg" />
+    <Content Include="img\cooked_food.jpg" />
+    <Content Include="img\dish\1.png" />
+    <Content Include="img\dish\10.png" />
+    <Content Include="img\dish\11.jpg" />
+    <Content Include="img\dish\12.jpg" />
+    <Content Include="img\dish\13.jpg" />
+    <Content Include="img\dish\14.jpg" />
+    <Content Include="img\dish\15.jpg" />
+    <Content Include="img\dish\16.jpg" />
+    <Content Include="img\dish\17.jpg" />
+    <Content Include="img\dish\18.jpg" />
+    <Content Include="img\dish\19.jpg" />
+    <Content Include="img\dish\2.png" />
+    <Content Include="img\dish\20.jpg" />
+    <Content Include="img\dish\21.jpg" />
+    <Content Include="img\dish\22.jpg" />
+    <Content Include="img\dish\23.jpg" />
+    <Content Include="img\dish\24.jpg" />
+    <Content Include="img\dish\25.jpg" />
+    <Content Include="img\dish\26.jpg" />
+    <Content Include="img\dish\27.jpg" />
+    <Content Include="img\dish\28.jpg" />
+    <Content Include="img\dish\29.jpg" />
+    <Content Include="img\dish\3.png" />
+    <Content Include="img\dish\30.jpg" />
+    <Content Include="img\dish\31.jpg" />
+    <Content Include="img\dish\32.jpg" />
+    <Content Include="img\dish\33.jpg" />
+    <Content Include="img\dish\34.jpg" />
+    <Content Include="img\dish\35.jpg" />
+    <Content Include="img\dish\36.jpg" />
+    <Content Include="img\dish\37.jpg" />
+    <Content Include="img\dish\38.jpg" />
+    <Content Include="img\dish\39.jpg" />
+    <Content Include="img\dish\4.png" />
+    <Content Include="img\dish\40.jpg" />
+    <Content Include="img\dish\41.jpg" />
+    <Content Include="img\dish\42.jpg" />
+    <Content Include="img\dish\43.jpg" />
+    <Content Include="img\dish\44.jpg" />
+    <Content Include="img\dish\5.png" />
+    <Content Include="img\dish\6.png" />
+    <Content Include="img\dish\7.png" />
+    <Content Include="img\dish\8.png" />
+    <Content Include="img\dish\9.png" />
+    <Content Include="img\dish\menu5-back1.jpg" />
+    <Content Include="img\dish\menu5-back2.jpg" />
+    <Content Include="img\dish\menu5-back3.jpg" />
+    <Content Include="img\dish\menu5-back4.jpg" />
+    <Content Include="img\dish\single-menu-tab1.jpg" />
+    <Content Include="img\dish\single-menu-tab2.jpg" />
+    <Content Include="img\dish\single-menu-tab3.jpg" />
+    <Content Include="img\dish\single-menu-tab4.jpg" />
+    <Content Include="img\dish\single-menu1.jpg" />
+    <Content Include="img\dish\single-menu2.jpg" />
+    <Content Include="img\dish\single-menu3.jpg" />
+    <Content Include="img\dish\single-menu4.jpg" />
+    <Content Include="img\family.jpg" />
+    <Content Include="img\family2.jpg" />
+    <Content Include="img\favicon.png" />
+    <Content Include="img\food-menu-back.png" />
+    <Content Include="img\footer-blog1.jpg" />
+    <Content Include="img\footer-blog2.jpg" />
+    <Content Include="img\footer-blog3.jpg" />
+    <Content Include="img\inner-page-banner.jpg" />
+    <Content Include="img\logo-color.png" />
+    <Content Include="img\logo-white.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\marinated_food.jpg" />
+    <Content Include="img\mobile-logo.png" />
+    <Content Include="img\raw_food.jpg" />
+    <Content Include="img\recipe-box2-1.jpg" />
+    <Content Include="img\recipe-box2-10.jpg" />
+    <Content Include="img\recipe-box2-2.jpg" />
+    <Content Include="img\recipe-box2-3.jpg" />
+    <Content Include="img\recipe-box2-7.jpg" />
+    <Content Include="img\recipe-box2-8.jpg" />
+    <Content Include="img\recipe-box2-9.jpg" />
+    <Content Include="img\recipe-of-the-day-banner.jpg" />
+    <Content Include="img\recipe-of-the-day2-banner.png" />
+    <Content Include="img\reservation-banner.png" />
+    <Content Include="img\reservation2-back.png" />
+    <Content Include="img\sea_food.jpg" />
+    <Content Include="img\section-back-1.png" />
+    <Content Include="img\sidebar\1.jpg" />
+    <Content Include="img\sidebar\2.jpg" />
+    <Content Include="img\sidebar\3.jpg" />
+    <Content Include="img\sidebar\4.jpg" />
+    <Content Include="img\sidebar\5.jpg" />
+    <Content Include="img\sidebar\6.jpg" />
+    <Content Include="img\sidebar\7.jpg" />
+    <Content Include="img\sidebar\8.jpg" />
+    <Content Include="img\signature.png" />
+    <Content Include="img\single-recipe.jpg" />
+    <Content Include="img\slider\about1-banner1.jpg" />
+    <Content Include="img\slider\slide1-1.jpg" />
+    <Content Include="img\slider\slide1-2.jpg" />
+    <Content Include="img\slider\slide1-3.jpg" />
+    <Content Include="img\slider\slide2-1.jpg" />
+    <Content Include="img\slider\slide2-2.jpg" />
+    <Content Include="img\slider\slide2-3.jpg" />
+    <Content Include="img\slider\slide3-1.jpg" />
+    <Content Include="img\slider\slide3-2.jpg" />
+    <Content Include="img\slider\slide3-3.jpg" />
+    <Content Include="img\special-dishes-back.jpg" />
+    <Content Include="img\table-reservation1.jpg" />
+    <Content Include="img\tasty-menu-back.png" />
+    <Content Include="img\team\1.jpg" />
+    <Content Include="img\team\2.jpg" />
+    <Content Include="img\team\3.jpg" />
+    <Content Include="img\team\about1-banner1.jpg" />
+    <Content Include="img\team\about1-banner_2.jpg" />
+    <Content Include="img\team\section-back.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\isotope.pkgd.min.js" />
+    <Content Include="js\jquery-2.2.4.min.js" />
+    <Content Include="js\jquery.counterup.min.js" />
+    <Content Include="js\jquery.datetimepicker.full.min.js" />
+    <Content Include="js\jquery.meanmenu.min.js" />
+    <Content Include="js\jquery.scrollUp.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\modernizr-2.8.3.min.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="js\select2.min.js" />
+    <Content Include="js\switch-style.js" />
+    <Content Include="js\validator.min.js" />
+    <Content Include="js\waypoints.min.js" />
+    <Content Include="js\wow.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\flaticon.eot" />
+    <Content Include="fonts\flaticon.ttf" />
+    <Content Include="fonts\flaticon.woff" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular_6464C2B1" />
+    <Content Include="fonts\_flaticon.scss" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="style.css" />
+    <Content Include="vendor\OwlCarousel\owl.carousel.min.css" />
+    <Content Include="vendor\OwlCarousel\owl.carousel.min.js" />
+    <Content Include="vendor\OwlCarousel\owl.theme.default.min.css" />
+    <Content Include="vendor\OwlCarousel\owl.video.play.png" />
+    <Content Include="vendor\slider\css\nivo-slider.css" />
+    <Content Include="vendor\slider\css\preview.css" />
+    <Content Include="vendor\slider\home.js" />
+    <Content Include="vendor\slider\js\jquery.nivo.slider.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\appetizer_menu.cshtml" />
+    <Content Include="Views\Home\buffet.cshtml" />
+    <Content Include="Views\Home\catering_menu.cshtml" />
+    <Content Include="Views\Home\cooked_food.cshtml" />
+    <Content Include="Views\Home\family_package.cshtml" />
+    <Content Include="Views\Home\marinated_food.cshtml" />
+    <Content Include="Views\Home\onsite_catering.cshtml" />
+    <Content Include="Views\Home\raw_food.cshtml" />
+    <Content Include="Views\Home\ready_to_serve.cshtml" />
+    <Content Include="Views\Home\reservation.cshtml" />
+    <Content Include="Views\Home\sea_food.cshtml" />
+    <Content Include="Views\Home\special_menu.cshtml" />
+    <Content Include="Views\Home\tray.cshtml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51324</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51324/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
